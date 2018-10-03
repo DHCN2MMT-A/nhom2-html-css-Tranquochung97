@@ -1,0 +1,72 @@
+#header{
+     margin: 0px;
+     padding: 0px;
+     font-family: sans-serif;
+     color:green;
+     background: pink;
+     list-style-type: none;
+     text-align: center;
+}
+#header li{
+     background: #1F568B;
+  list-style-type: none;
+  overflow: hidden;
+  width: 100%;
+}
+#header li {
+  color: #f1f1f1;
+  float: left;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+}
+#header a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+
+}
+#header a:hover {
+  background: #F1F1F1;
+  color: #333;
+   }
+.grid{
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". title title ."
+    ". header header ."
+    ".sidebar content  ."
+    ". footer footer .";
+}
+
+.title{
+    grid-area: title;
+}
+
+.header{
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.content{
+    grid-area: content;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.grid div:nth-child(odd){
+ color:red;
+ background-color: darkblue;
+}
+
+.grid div:nth-child(even){
+background-color: coral;
+color: green;
+}
